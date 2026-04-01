@@ -1,26 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Colors — Kultiv organic palette */
+  --color-primary: #154212;
+  --color-primary-light: #2d5a27;
+  --color-secondary: #6d4c41;
+  --color-tertiary: #f9a825;
+  --color-surface: #fafaf5;
+  --color-surface-container: #f0efe8;
+  --color-surface-container-low: #f5f5ee;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-highest: #e8e8e0;
+  --color-on-surface: #1b1b18;
+  --color-on-surface-variant: #5a5a52;
+  --color-outline-variant: #c8c5b8;
+
+  /* Fonts */
+  --font-headline: var(--font-manrope), sans-serif;
+  --font-body: var(--font-work-sans), sans-serif;
+
+  /* Shadows */
+  --shadow-soil-sm: 0 2px 8px rgba(21, 66, 18, 0.08);
+  --shadow-soil: 0 4px 24px rgba(21, 66, 18, 0.12);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Material Symbols */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Organic gradient utility */
+.bg-organic-gradient {
+  background: linear-gradient(145deg, #154212 0%, #2d5a27 60%, #3a6b32 100%);
+}
+
+/* Ticker animation */
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-ticker {
+  animation: ticker 30s linear infinite;
+}
+.animate-ticker:hover {
+  animation-play-state: paused;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: var(--font-body);
 }
