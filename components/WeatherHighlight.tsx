@@ -81,15 +81,23 @@ export default function WeatherHighlight() {
                 ))}
               </div>
               <div className="mt-6 flex gap-2">
-                {['Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam', 'Dim'].map((d, i) => (
+                {[
+                  { day: 'Lun', temp: 18 },
+                  { day: 'Mar', temp: 19 },
+                  { day: 'Mer', temp: 17 },
+                  { day: 'Jeu', temp: 21 },
+                  { day: 'Ven', temp: 20 },
+                  { day: 'Sam', temp: 16 },
+                  { day: 'Dim', temp: 18 },
+                ].map((d, i) => (
                   <div
-                    key={d}
+                    key={d.day}
                     className={`flex-1 text-center py-2 rounded-lg text-xs ${
                       i === 0 ? 'bg-white/15 font-bold' : 'text-white/50'
                     }`}
                   >
-                    <p>{d}</p>
-                    <p className="mt-1 font-medium">{16 + Math.floor(Math.random() * 6)}°</p>
+                    <p>{d.day}</p>
+                    <p className="mt-1 font-medium">{d.temp}°</p>
                   </div>
                 ))}
               </div>
