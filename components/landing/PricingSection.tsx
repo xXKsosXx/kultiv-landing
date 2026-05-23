@@ -40,7 +40,7 @@ export function PricingSection() {
               <li><Check size={16} />Encyclopédie complète</li>
               <li><Check size={16} />Alertes météo basiques</li>
             </ul>
-            <a href="#essai" className="lp-btn lp-btn-ghost">
+            <a href="https://kultivar.app" className="lp-btn lp-btn-ghost">
               Commencer gratuitement
             </a>
           </RevealOnScroll>
@@ -67,7 +67,7 @@ export function PricingSection() {
               <li><Check size={16} />Export Excel / CSV</li>
               <li><Check size={16} />Support prioritaire</li>
             </ul>
-            <a href="#cta" className="lp-btn lp-btn-terra">
+            <a href="https://kultivar.app" className="lp-btn lp-btn-terra">
               Essayer 14 jours
             </a>
             <div className="lp-pcard-trust">

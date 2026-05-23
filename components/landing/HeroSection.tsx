@@ -47,7 +47,7 @@ export function HeroSection() {
           </RevealOnScroll>
 
           <RevealOnScroll className="lp-hero-ctas">
-            <a href="#essai" className="lp-btn lp-btn-primary">
+            <a href="https://kultivar.app" className="lp-btn lp-btn-primary">
               Essayer gratuitement 14 jours
             </a>
             <a href="#demo" className="lp-btn-text">

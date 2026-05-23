@@ -15,7 +15,7 @@ export function FinalCtaSection() {
         </RevealOnScroll>
         <RevealOnScroll delay={160}>
           <a
-            href="#"
+            href="https://kultivar.app"
             className="lp-btn lp-btn-primary"
             aria-label="Essayer Kultivar gratuitement pendant 14 jours"
           >

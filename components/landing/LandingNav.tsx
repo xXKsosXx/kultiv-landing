@@ -29,7 +29,7 @@ export function LandingNav() {
         <a href="#histoire">Notre histoire</a>
         <a href="#tarifs">Tarifs</a>
         <a href="#faq">FAQ</a>
-        <a href="#essai" className="lp-nav-cta">
+        <a href="https://kultivar.app" className="lp-nav-cta">
           Essayer gratuitement
         </a>
       </div>
