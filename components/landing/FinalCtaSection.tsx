@@ -24,14 +24,14 @@ export function FinalCtaSection() {
         </RevealOnScroll>
 
         {/*
-          Image fournie par Kamal. Format attendu : PNG fond transparent,
-          palette Kultivar (terracotta + sage + vert profond + crème), env. 1024x683.
-          Path final attendu : /images/landing/hands-with-seedlings.png
-          (placeholder SVG actuellement utilisé en attendant le PNG)
+          Image fournie par Kamal — aquarelle mains + pousses.
+          Path attendu : public/images/landing/hands-with-seedlings.png
+          Format : PNG fond transparent, ~600x400 (la palette aquarelle
+          terracotta/sage/cream ressort bien sur le fond vert profond).
         */}
         <RevealOnScroll className="lp-final-motif" delay={240}>
           <Image
-            src="/images/landing/hands-with-seedlings.svg"
+            src="/images/landing/hands-with-seedlings.png"
             alt="Mains tenant de la terre avec de jeunes pousses"
             width={480}
             height={320}

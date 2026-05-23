@@ -6,7 +6,7 @@ import { HeroSection } from '@/components/landing/HeroSection'
 import { ProblemSection } from '@/components/landing/ProblemSection'
 import { PillarsSection } from '@/components/landing/PillarsSection'
 import { ShowcaseSection } from '@/components/landing/ShowcaseSection'
-import { DifferentiationSection } from '@/components/landing/DifferentiationSection'
+import { TerroirsSection } from '@/components/landing/TerroirsSection'
 import { FoundersSection } from '@/components/landing/FoundersSection'
 import { PricingSection } from '@/components/landing/PricingSection'
 import { FaqSection } from '@/components/landing/FaqSection'
@@ -23,7 +23,7 @@ export default function Home() {
         <ProblemSection />
         <PillarsSection />
         <ShowcaseSection />
-        <DifferentiationSection />
+        <TerroirsSection />
         <FoundersSection />
         <PricingSection />
         <FaqSection />
