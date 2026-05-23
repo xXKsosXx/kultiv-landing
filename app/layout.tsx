@@ -1,52 +1,78 @@
 import type { Metadata } from 'next'
-import { Manrope, Work_Sans } from 'next/font/google'
+import { Fraunces, Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 
-const manrope = Manrope({
+const fraunces = Fraunces({
   subsets: ['latin'],
-  variable: '--font-manrope',
+  weight: ['400', '500', '600', '700', '900'],
+  style: ['normal', 'italic'],
+  variable: '--font-display',
   display: 'swap',
 })
 
-const workSans = Work_Sans({
+const geist = Geist({
   subsets: ['latin'],
-  variable: '--font-work-sans',
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-body',
+  display: 'swap',
+})
+
+const geistMono = Geist_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-mono',
   display: 'swap',
 })
 
 export const metadata: Metadata = {
-  title: 'Kultiv — Votre exploitation, pilotée avec intelligence',
+  metadataBase: new URL('https://kultivar.app'),
+  title: "Kultivar — L'agronomie tient dans votre poche",
   description:
-    'Journal de terrain, météo agronomique, ITK personnalisés et alertes en temps réel — tout ce dont un agriculteur a besoin, sur une seule app.',
+    "Conseils IA contextuels, journal vocal, alertes phyto, planning des récoltes. L'application française qui transforme la complexité agronomique en plan d'action quotidien.",
+  keywords: [
+    'maraîchage bio',
+    'agriculture',
+    'microferme',
+    'gestion exploitation',
+    'France',
+    'application maraîcher',
+    'agronomie',
+    'ITK',
+  ],
   openGraph: {
-    title: 'Kultiv — Votre exploitation, pilotée avec intelligence',
+    title: "Kultivar — L'agronomie tient dans votre poche",
     description:
-      'La première app agronomique intelligente pour les agriculteurs français.',
-    url: 'https://kultiv.app',
-    siteName: 'Kultiv',
+      "L'application française qui transforme la complexité agronomique en plan d'action quotidien.",
+    url: 'https://kultivar.app',
+    siteName: 'Kultivar',
     locale: 'fr_FR',
     type: 'website',
+    images: [
+      {
+        url: '/images/landing/og-image-placeholder.svg',
+        width: 1200,
+        height: 630,
+        alt: "Kultivar — L'agronomie en poche",
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kultiv',
-    description: 'Météo agronomique, ITK, journal de terrain — sur une seule app.',
+    title: "Kultivar — L'agronomie tient dans votre poche",
+    description:
+      "L'application française qui transforme la complexité agronomique en plan d'action quotidien.",
+    images: ['/images/landing/og-image-placeholder.svg'],
   },
   robots: { index: true, follow: true },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr" className={`${manrope.variable} ${workSans.variable} scroll-smooth`}>
-      <head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
-        />
-      </head>
-      <body className="antialiased">
-        {children}
-      </body>
+    <html
+      lang="fr"
+      className={`${fraunces.variable} ${geist.variable} ${geistMono.variable} scroll-smooth`}
+    >
+      <body className="antialiased">{children}</body>
     </html>
   )
 }

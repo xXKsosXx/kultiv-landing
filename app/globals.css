@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Colors — Kultiv organic palette */
   --color-primary: #154212;
   --color-primary-light: #2d5a27;
   --color-secondary: #6d4c41;
@@ -14,55 +13,9 @@
   --color-on-surface: #1b1b18;
   --color-on-surface-variant: #5a5a52;
   --color-outline-variant: #c8c5b8;
-
-  /* Fonts */
-  --font-headline: var(--font-manrope), sans-serif;
-  --font-body: var(--font-work-sans), sans-serif;
-
-  /* Shadows */
-  --shadow-soil-sm: 0 2px 8px rgba(21, 66, 18, 0.08);
-  --shadow-soil: 0 4px 24px rgba(21, 66, 18, 0.12);
 }
 
-/* Material Symbols */
-.material-symbols-outlined {
-  font-family: 'Material Symbols Outlined';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  font-feature-settings: 'liga';
-  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-}
-
-/* Organic gradient utility */
-.bg-organic-gradient {
-  background: linear-gradient(145deg, #154212 0%, #2d5a27 60%, #3a6b32 100%);
-}
-
-/* Ticker animation */
-@keyframes ticker {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-.animate-ticker {
-  animation: ticker 30s linear infinite;
-}
-.animate-ticker:hover {
-  animation-play-state: paused;
-}
-
-body {
-  background: var(--color-surface);
-  color: var(--color-on-surface);
-  font-family: var(--font-body);
+html, body {
+  margin: 0;
+  padding: 0;
 }
