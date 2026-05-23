@@ -7,7 +7,7 @@ export function LandingFooter() {
         <div className="lp-footer-grid">
           <div>
             <div className="lp-footer-brand">
-              <KultivarLogo variant="light" />
+              <KultivarLogo variant="light" size={28} />
               Kultivar
             </div>
             <p>
@@ -51,9 +51,17 @@ export function LandingFooter() {
 
         <div className="lp-footer-bottom">
           <div className="lp-footer-bottom-left">
-            © 2026 Kultivar SAS · Conçu en France, avec amour, pour ceux qui cultivent.
+            © 2026 Kultivar · Conçu en France pour ceux qui cultivent · Hébergé en
+            Europe · Site conçu par{' '}
+            <a
+              href="https://sparkana.fr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="lp-footer-sparkana"
+            >
+              Sparkana
+            </a>
           </div>
-          <div>v1.0 — Mai 2026</div>
         </div>
       </div>
     </footer>

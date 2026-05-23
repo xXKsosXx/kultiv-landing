@@ -33,27 +33,41 @@ export function PillarsSection() {
             </div>
             <h3>Conseils IA contextuels.</h3>
             <p>
-              Tous les matins, votre conseil du jour croise la météo, le stade de vos
-              cultures, et vos pratiques. Pas des génériques — des recommandations
-              adaptées à votre exploitation, votre région, votre stade saisonnier.
+              Chaque matin, votre conseil du jour croise la météo agronomique
+              précise (ETP, bilan hydrique, prévisions 7 jours par Météo-France)
+              avec le stade exact de vos cultures et vos pratiques. Pas un conseil
+              générique : une recommandation actionnable, calibrée pour votre
+              exploitation.
             </p>
 
-            <div className="lp-pillar-art" aria-hidden>
-              <div className="lp-pillar-art-row">
-                <div className="lp-pillar-art-icon">
-                  <Sparkle size={14} />
+            <div className="lp-pillar-cards" aria-hidden>
+              <div className="lp-pcard-mini">
+                <div className="lp-pcard-mini-label">Conseil du jour</div>
+                <div className="lp-pcard-mini-title">
+                  Repiquez les courgettes avant la pluie de jeudi.
                 </div>
-                <div>
-                  <div className="lp-label">Conseil du jour</div>
-                  <div className="lp-ttl">
-                    Repiquez vos courgettes avant jeudi.
-                  </div>
+                <div className="lp-pcard-mini-body">
+                  14 mm prévus jeudi soir. Vos plants Diamant sont à 4 vraies
+                  feuilles — fenêtre idéale aujourd&apos;hui.
+                </div>
+                <div className="lp-pcard-mini-pill">
+                  Parcelle Sud · Planche 03
                 </div>
               </div>
-              <p className="lp-sm">
-                14 mm prévus jeudi soir. Vos plants sont à 4 vraies feuilles —
-                fenêtre idéale aujourd&apos;hui.
-              </p>
+
+              <div className="lp-pcard-mini">
+                <div className="lp-pcard-mini-label">Météo agronomique</div>
+                <div className="lp-pcard-mini-title">
+                  ETP 4.3 mm · 0 mm de pluie sur 3 jours
+                </div>
+                <div className="lp-pcard-mini-body">
+                  Risque de stress hydrique sur cultures sensibles. Irrigation
+                  recommandée d&apos;ici 48 h.
+                </div>
+                <div className="lp-pcard-mini-pill">
+                  Carottes J+58 · Tomates
+                </div>
+              </div>
             </div>
           </RevealOnScroll>
 

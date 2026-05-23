@@ -7,6 +7,7 @@ import {
   Warning,
   DotsSixVertical,
   ChartLineUp,
+  CheckCircle,
 } from '@phosphor-icons/react/dist/ssr'
 import { RevealOnScroll } from './RevealOnScroll'
 import { PhoneMockupShowcase } from './PhoneMockupShowcase'
@@ -102,7 +103,7 @@ export function ShowcaseSection() {
           <RevealOnScroll className="lp-floater lp-float-4" delay={240}>
             <div className="lp-flab">
               <BookOpen size={12} />
-              Encyclopédie · 159 fiches
+              Encyclopédie · +150 variétés
             </div>
             <div className="lp-enc-img">
               <Plant size={32} />
@@ -157,10 +158,19 @@ export function ShowcaseSection() {
             <div className="lp-feat-icon">
               <BookOpen size={18} />
             </div>
-            <h5>Encyclopédie de 159 variétés</h5>
+            <h5>Encyclopédie de +150 variétés</h5>
             <p>
-              Références agronomiques officielles françaises pour 28 cultures
-              principales.
+              Fiches détaillées pour vous accompagner du semis à la récolte.
+            </p>
+          </RevealOnScroll>
+          <RevealOnScroll className="lp-feat" delay={320}>
+            <div className="lp-feat-icon">
+              <CheckCircle size={18} />
+            </div>
+            <h5>Références agronomiques officielles</h5>
+            <p>
+              Couverture des principales cultures avec les standards reconnus en
+              Europe.
             </p>
           </RevealOnScroll>
         </div>

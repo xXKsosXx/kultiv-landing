@@ -26,7 +26,7 @@ export function HeroSection() {
         <div className="lp-hero-text">
           <RevealOnScroll className="lp-hero-eyebrow">
             <span className="lp-dot" />
-            L&apos;agronomie en poche · Mars 2026
+            L&apos;agronomie en poche
           </RevealOnScroll>
 
           <RevealOnScroll>
@@ -40,7 +40,7 @@ export function HeroSection() {
           <RevealOnScroll>
             <p className="lp-lede lp-hero-sub">
               Conseils IA contextuels, journal vocal, alertes phyto, planning des
-              récoltes. L&apos;application française qui transforme la complexité
+              récoltes. L&apos;application qui transforme la complexité
               agronomique en plan d&apos;action quotidien — directement sur votre
               téléphone, en plein champ.
             </p>
@@ -58,9 +58,9 @@ export function HeroSection() {
           <RevealOnScroll className="lp-hero-trust lp-meta">
             Sans engagement
             <span className="lp-dot" />
-            Cartes acceptées
+            Résiliation en 1 clic
             <span className="lp-dot" />
-            Données hébergées en Europe
+            Données stockées en Europe
           </RevealOnScroll>
         </div>
 

@@ -34,8 +34,8 @@ export function FoundersSection() {
             <p>
               « Kultivar est né de cette remarque. Mobile-first parce qu&apos;on est
               dans le champ. Personnalisable parce qu&apos;aucun maraîcher ne cultive
-              exactement comme son voisin. Français parce que nos terroirs, nos
-              labels, nos calendriers ne ressemblent à <em>aucun autre</em>. »
+              exactement comme son voisin. <em>Adapté parce que la diversité
+              agronomique européenne ne tient pas dans une méthode unique</em>. »
             </p>
           </div>
           <div className="lp-founder-sig">

@@ -3,7 +3,6 @@ import './landing.css'
 import { ScrollProgress } from '@/components/landing/ScrollProgress'
 import { LandingNav } from '@/components/landing/LandingNav'
 import { HeroSection } from '@/components/landing/HeroSection'
-import { SocialProofSection } from '@/components/landing/SocialProofSection'
 import { ProblemSection } from '@/components/landing/ProblemSection'
 import { PillarsSection } from '@/components/landing/PillarsSection'
 import { ShowcaseSection } from '@/components/landing/ShowcaseSection'
@@ -21,7 +20,6 @@ export default function Home() {
       <LandingNav />
       <main id="top">
         <HeroSection />
-        <SocialProofSection />
         <ProblemSection />
         <PillarsSection />
         <ShowcaseSection />
