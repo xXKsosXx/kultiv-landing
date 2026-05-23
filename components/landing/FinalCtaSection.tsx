@@ -16,18 +16,18 @@ export function FinalCtaSection() {
         <RevealOnScroll delay={160}>
           <a
             href="#"
-            className="lp-btn lp-btn-cream"
-            aria-label="Créer mon compte Kultivar"
+            className="lp-btn lp-btn-primary"
+            aria-label="Essayer Kultivar gratuitement pendant 14 jours"
           >
-            Créer mon compte
+            Essayer 14 jours gratuits
           </a>
         </RevealOnScroll>
 
         {/*
-          Image fournie par Kamal — aquarelle mains + pousses.
-          Path attendu : public/images/landing/hands-with-seedlings.png
-          Format : PNG fond transparent, ~600x400 (la palette aquarelle
-          terracotta/sage/cream ressort bien sur le fond vert profond).
+          Aquarelle mains + pousses.
+          Path : public/images/landing/hands-with-seedlings.png
+          La palette terracotta / sage / cream de l'aquarelle s'intègre
+          maintenant sur le fond crème de la section.
         */}
         <RevealOnScroll className="lp-final-motif" delay={240}>
           <Image
