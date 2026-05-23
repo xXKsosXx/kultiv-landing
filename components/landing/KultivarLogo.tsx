@@ -6,27 +6,28 @@ interface KultivarLogoProps {
 }
 
 /**
- * Logo Kultivar (moulinet).
- * Kamal doit déposer :
- *  - public/images/logo-kultivar.png        (logo principal, transparent ou bg clair)
- *  - public/images/logo-kultivar-light.png  (variante cream/sage pour fond sombre)
- *    En attendant la version cream, on retombe sur le placeholder K cream
- *    via le fichier logo-kultivar-light.svg.
+ * Logo Kultivar (moulinet) — même PNG pour les deux variantes.
+ * Sur fond sombre (variant="light"), un backdrop cream/sage rend
+ * le moulinet vert profond lisible.
  */
 export function KultivarLogo({ variant = 'dark', size = 32 }: KultivarLogoProps) {
-  const src =
-    variant === 'light'
-      ? '/images/logo-kultivar-light.svg'
-      : '/images/logo-kultivar.png'
+  const wrapperClass =
+    variant === 'light' ? 'lp-logo-wrap lp-logo-wrap--light' : 'lp-logo-wrap'
+
   return (
-    <Image
-      src={src}
-      alt=""
-      width={size}
-      height={size}
-      priority
+    <span
+      className={wrapperClass}
+      style={{ width: size, height: size }}
       aria-hidden
-      style={{ display: 'block', width: size, height: size, objectFit: 'contain' }}
-    />
+    >
+      <Image
+        src="/images/logo-kultivar.png"
+        alt=""
+        width={size}
+        height={size}
+        priority
+        className="lp-logo-img"
+      />
+    </span>
   )
 }

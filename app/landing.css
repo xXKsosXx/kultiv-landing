@@ -2192,6 +2192,29 @@
   text-decoration-color: var(--terracotta);
 }
 
+/* Logo wrapper — same PNG for nav (light bg) + footer (dark bg) */
+.lp-logo-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.lp-logo-wrap--light {
+  background: var(--creme);
+  padding: 3px;
+  box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.25);
+}
+
+.lp-logo-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 /* =========================================================
    TERROIRS — 5 cards on terracotta bg (replaces .lp-diff)
    ========================================================= */
