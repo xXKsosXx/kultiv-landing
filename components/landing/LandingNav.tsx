@@ -26,8 +26,8 @@ export function LandingNav() {
         <Image
           src="/images/logo-mot-kultivar.png"
           alt="Kultivar"
-          width={150}
-          height={40}
+          width={148}
+          height={53}
           priority
           className="lp-nav-wordmark"
         />
