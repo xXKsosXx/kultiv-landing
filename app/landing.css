@@ -155,7 +155,7 @@
 .lp-nav-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   font-family: var(--f-display);
   font-weight: 700;
   font-size: 1.2rem;
@@ -166,6 +166,21 @@
 .lp-nav-logo svg {
   width: 26px;
   height: 26px;
+}
+
+.lp-nav-wordmark {
+  width: auto !important;
+  height: 36px !important;
+  display: block;
+  object-fit: contain;
+}
+
+.lp-nav.lp-nav--compact .lp-nav-wordmark {
+  height: 30px !important;
+}
+
+@media (max-width: 480px) {
+  .lp-nav-wordmark { height: 28px !important; }
 }
 
 .lp-nav-links {

@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { KultivarLogo } from './KultivarLogo'
 
@@ -22,7 +23,14 @@ export function LandingNav() {
     >
       <a href="#top" className="lp-nav-logo" aria-label="Kultivar accueil">
         <KultivarLogo />
-        Kultivar
+        <Image
+          src="/images/logo-mot-kultivar.png"
+          alt="Kultivar"
+          width={150}
+          height={40}
+          priority
+          className="lp-nav-wordmark"
+        />
       </a>
       <div className="lp-nav-links">
         <a href="#fonctions">Fonctionnalités</a>
